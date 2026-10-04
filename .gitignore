@@ -1,0 +1,10 @@
+*.pem
+*.key
+*.ppk
+*.o
+*.exe
+hello_mpi
+messages1
+messages2
+.DS_Store
+__MACOSX/
