@@ -1,0 +1,27 @@
+Exercise 07: Buffered Pi Results
+============================================================
+Student ID: IT24610781
+Files: pi_bsend.c; pi_bsend_run.txt
+
+1. COMPILE / SETUP
+-----------------------
+mpicc -Wall -Wextra -O2 pi_bsend.c -o pi_bsend
+
+2. OBSERVED RESULTS
+-----------------------
+Total trials 10000000; inside 7854326; pi 3.1417304000.
+Absolute error 0.0001377464; elapsed 0.031489877 seconds.
+Validation CORRECT; exit 0.
+
+3. EXPLANATION
+-----------------------
+Each worker attaches space for one MPI_LONG_LONG_INT packed message plus MPI_BSEND_OVERHEAD, sends using MPI_Bsend, detaches then frees the buffer. Root retains MPI_ANY_SOURCE and tag 100. Results equal Exercise06. One timing per version is insufficient to claim Bsend is faster.
+
+4. DISTRIBUTED RUN
+-----------------------
+MPI environment: Amazon Linux 2023, Open MPI 4.1.2.
+Enable /usr/lib64/openmpi/bin in PATH and libraries in LD_LIBRARY_PATH.
+Set OMPI_MCA_plm_rsh_agent to SSH using ~/.ssh/lab08_mpi.
+Install executable at the same absolute path on both nodes.
+mpirun --prefix /usr/lib64/openmpi --host 172.31.27.178:2,172.31.83.161:1 --map-by slot --bind-to none -np 3 /home/ec2-user/lab08/Exercise07/pi_bsend
+

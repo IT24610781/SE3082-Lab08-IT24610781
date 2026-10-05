@@ -1,0 +1,29 @@
+Exercise 06: Pi with MPI_ANY_SOURCE
+============================================================
+Student ID: IT24610781
+Files: pi_any_source.c; pi_any_source_run.txt
+
+1. COMPILE / SETUP
+-----------------------
+mpicc -Wall -Wextra -O2 pi_any_source.c -o pi_any_source
+
+2. OBSERVED RESULTS
+-----------------------
+Trials by rank: 3333334,3333333,3333333.
+Inside counts: 2618117,2617068,2619141.
+Total inside 7854326; total trials 10000000; pi 3.1417304000.
+Absolute error 0.0001377464; elapsed 0.031976079 seconds.
+Validation CORRECT; exit 0.
+
+3. EXPLANATION
+-----------------------
+Workers send counts with MPI_Send and tag 100. Root adds its count and receives size-1 results using MPI_ANY_SOURCE. Trial and timing reductions remain. MPI_ANY_SOURCE belongs in the source argument, not the tag argument (a wording error in the sheet). Reference: https://docs.open-mpi.org/en/main/man-openmpi/man3/MPI_Recv.3.html . Results match Exercise03 with three processes.
+
+4. DISTRIBUTED RUN
+-----------------------
+MPI environment: Amazon Linux 2023, Open MPI 4.1.2.
+Enable /usr/lib64/openmpi/bin in PATH and libraries in LD_LIBRARY_PATH.
+Set OMPI_MCA_plm_rsh_agent to SSH using ~/.ssh/lab08_mpi.
+Install executable at the same absolute path on both nodes.
+mpirun --prefix /usr/lib64/openmpi --host 172.31.27.178:2,172.31.83.161:1 --map-by slot --bind-to none -np 3 /home/ec2-user/lab08/Exercise06/pi_any_source
+

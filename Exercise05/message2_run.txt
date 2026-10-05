@@ -1,0 +1,6 @@
+Process 0 sent 0
+Process 0 sent 10
+Process 0 sent 20
+Process 1 received 0
+Process 1 received 10
+Process 1 received 20

@@ -1,0 +1,55 @@
+Exercise 04: Timing and Speedup Comparison
+============================================================
+Student ID: IT24610781
+Evidence: comparison_runs.txt; timings.csv
+
+1. METHOD
+-----------------------
+Workloads: sum 1..10,000,000 and 10,000,000 Monte Carlo trials.
+Five runs at each of 1,2,3 MPI processes for each program: 30 total.
+Amazon Linux 2023, Open MPI 4.1.2, compiled with -O2.
+P=1: one process on Lab03.
+P=2: one on Lab03 and one on Web Server.
+P=3: two on Lab03 and one on Web Server.
+No oversubscription requested. Identical workloads across process counts.
+
+2. RESULTS
+-----------------------
+Program Processes  Mean time (s)   Speedup   Efficiency (%)
+sum     1          0.005080800     1.0000    100.00
+sum     2          0.002704354     1.8787    93.94
+sum     3          0.001844080     2.7552    91.84
+pi      1          0.094855639     1.0000    100.00
+pi      2          0.047457264     1.9988    99.94
+pi      3          0.031928153     2.9709    99.03
+All 30 runs validated successfully and exited 0.
+Mean = sum of five times / 5.
+Speedup = one-process mean / parallel mean.
+Efficiency = speedup / process count * 100%.
+Baseline is the one-process MPI program.
+
+3. EXPLANATION AND LIMITATIONS
+-----------------------
+Both programs got faster in this dataset. Pi scaled almost linearly,
+consistent with independent sampling and little shared work. Sum's
+short runtime makes communication and variation more significant.
+These are interpretations of these measurements.
+
+Timers include computation and result reductions, but exclude MPI
+startup, the initial barrier, printing and timing aggregation.
+The nodes are different instance types: t2.large and t2.micro.
+Burstable CPU conditions and node differences affect performance.
+Process counts do not establish the number of physical cores.
+
+All sums equal 50000005000000.
+Pi: P=1 3.1416776000; P=2 3.1413084000; P=3 3.1417304000.
+Fixed rank-specific seeds repeat estimates at a given process count.
+Changing process count changes streams; speedup does not imply accuracy.
+
+The sheet's timing reference to exercises 1 and 2 is interpreted as
+the two computational tasks, sum (Exercise02) and pi (Exercise03),
+because Exercise01 is repository creation.
+
+4. CONCLUSION
+-----------------------
+At three processes, sum speedup was 2.755x and pi speedup 2.971x.

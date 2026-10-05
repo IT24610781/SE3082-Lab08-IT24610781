@@ -1,0 +1,21 @@
+Exercise 05: Message Matching and Buffered Sends
+============================================================
+Student ID: IT24610781
+Files: Five .cc sources and five *_run.txt logs
+
+1. COMPILE / SETUP
+-----------------------
+mpicxx -DOMPI_SKIP_MPICXX=1 -Wall -Wextra -O2 SOURCE.cc -o PROGRAM
+timeout -k 5s 15s mpirun --bind-to none -np 2 ./PROGRAM
+For mismatch tests use timeout -k 5s 10s.
+
+2. OBSERVED RESULTS
+-----------------------
+Baseline: rank 1 received 42 and then 0,10,20; terminal exit codes 0.
+Both mismatch runs: no received values; timeout exit 124.
+Buffered version: received 0,10,20; validation CORRECT; exit 0.
+
+3. EXPLANATION
+-----------------------
+Runs used two processes on Lab03. Mismatch versions change receive source to rank 1 while messages originate from rank 0. Rank 1 waits for a nonexistent self-message. Small MPI_Send calls may return through internal buffering without a matching receive completing. MPI_Bsend reserves 3*(packed_size+MPI_BSEND_OVERHEAD), permits reuse of the variable after returning, and detaches before buffer destruction.
+

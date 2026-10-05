@@ -1,0 +1,11 @@
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 5000000, inside = 3926691
+
+Processes = 2
+Total trials = 10000000
+Inside points = 7853271
+Estimated pi = 3.1413084000
+Reference pi = 3.1415926536
+Absolute error = 0.0002842536
+Trial count validation: CORRECT
+Maximum elapsed time = 0.047695350 seconds
+Rank 1 on ip-172-31-83-161.ec2.internal: trials = 5000000, inside = 3926580

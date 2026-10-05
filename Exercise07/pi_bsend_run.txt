@@ -1,0 +1,13 @@
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 3333334, inside = 2618117
+
+Processes = 3
+Total trials = 10000000
+Inside points = 7854326
+Estimated pi = 3.1417304000
+Reference pi = 3.1415926536
+Absolute error = 0.0001377464
+Trial count validation: CORRECT
+Maximum elapsed time = 0.031489877 seconds
+Rank 1 on ip-172-31-27-178.ec2.internal: trials = 3333333, inside = 2617068
+Rank 2 on ip-172-31-83-161.ec2.internal: trials = 3333333, inside = 2619141
+MPI run exit code: 0

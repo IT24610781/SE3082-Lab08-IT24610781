@@ -1,0 +1,18 @@
+Exercise 00: MPI Starter Examples
+============================================================
+Student ID: IT24610781
+Files: HelloMPI.c, messages1.cc, messages2.cc
+
+1. COMPILE / SETUP
+-----------------------
+mpicxx -DOMPI_SKIP_MPICXX=1 -Wall -Wextra -O2 -x c++ HelloMPI.c -o hello_mpi
+mpirun --oversubscribe --bind-to none -np 2 ./hello_mpi
+
+2. OBSERVED RESULTS
+-----------------------
+Hello printed ranks 0 and 1. Scalar example sent 30 from rank 1 to 3. Array example sent 0,10,20,30,40,50,60,70,80,90. The two-node hello test printed different hostnames and exited 0. Evidence: terminal outputs recorded during the session.
+
+3. EXPLANATION
+-----------------------
+MPI ranks identify processes, which may run on one machine or different machines. The processor-name buffer uses MPI_MAX_PROCESSOR_NAME. Compile .cc examples with mpicxx without -x c++; run with four processes. Output ordering across ranks varies.
+

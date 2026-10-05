@@ -1,0 +1,8 @@
+Process 0 buffered-send 0
+Process 0 buffered-send 10
+Process 0 buffered-send 20
+Process 1 received 0
+Process 1 received 10
+Process 1 received 20
+Validation: CORRECT
+Buffered-send exit code: 0

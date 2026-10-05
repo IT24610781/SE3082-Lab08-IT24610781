@@ -1,0 +1,345 @@
+=== Program=sum Processes=1 Run=1 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 10000000], local sum = 50000005000000
+
+Processes = 1
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.005183364 seconds
+Exit code: 0
+=== Program=sum Processes=1 Run=2 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 10000000], local sum = 50000005000000
+
+Processes = 1
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.005396421 seconds
+Exit code: 0
+=== Program=sum Processes=1 Run=3 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 10000000], local sum = 50000005000000
+
+Processes = 1
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.004810074 seconds
+Exit code: 0
+=== Program=sum Processes=1 Run=4 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 10000000], local sum = 50000005000000
+
+Processes = 1
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.004784341 seconds
+Exit code: 0
+=== Program=sum Processes=1 Run=5 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 10000000], local sum = 50000005000000
+
+Processes = 1
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.005229802 seconds
+Exit code: 0
+=== Program=sum Processes=2 Run=1 ===
+Rank 1 on ip-172-31-83-161.ec2.internal: range [5000001, 10000000], local sum = 37500002500000
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 5000000], local sum = 12500002500000
+
+Processes = 2
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.003660492 seconds
+Exit code: 0
+=== Program=sum Processes=2 Run=2 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 5000000], local sum = 12500002500000
+
+Processes = 2
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.002629889 seconds
+Rank 1 on ip-172-31-83-161.ec2.internal: range [5000001, 10000000], local sum = 37500002500000
+Exit code: 0
+=== Program=sum Processes=2 Run=3 ===
+Rank 1 on ip-172-31-83-161.ec2.internal: range [5000001, 10000000], local sum = 37500002500000
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 5000000], local sum = 12500002500000
+
+Processes = 2
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.002476326 seconds
+Exit code: 0
+=== Program=sum Processes=2 Run=4 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 5000000], local sum = 12500002500000
+
+Processes = 2
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.002559804 seconds
+Rank 1 on ip-172-31-83-161.ec2.internal: range [5000001, 10000000], local sum = 37500002500000
+Exit code: 0
+=== Program=sum Processes=2 Run=5 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 5000000], local sum = 12500002500000
+
+Processes = 2
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.002195257 seconds
+Rank 1 on ip-172-31-83-161.ec2.internal: range [5000001, 10000000], local sum = 37500002500000
+Exit code: 0
+=== Program=sum Processes=3 Run=1 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 3333334], local sum = 5555559444445
+
+Processes = 3
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.001655897 seconds
+Rank 1 on ip-172-31-27-178.ec2.internal: range [3333335, 6666667], local sum = 16666668333333
+Rank 2 on ip-172-31-83-161.ec2.internal: range [6666668, 10000000], local sum = 27777777222222
+Exit code: 0
+=== Program=sum Processes=3 Run=2 ===
+Rank 1 on ip-172-31-27-178.ec2.internal: range [3333335, 6666667], local sum = 16666668333333
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 3333334], local sum = 5555559444445
+
+Rank 2 on ip-172-31-83-161.ec2.internal: range [6666668, 10000000], local sum = 27777777222222
+Processes = 3
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.002023460 seconds
+Exit code: 0
+=== Program=sum Processes=3 Run=3 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 3333334], local sum = 5555559444445
+
+Rank 1 on ip-172-31-27-178.ec2.internal: range [3333335, 6666667], local sum = 16666668333333
+Processes = 3
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.001832788 seconds
+Rank 2 on ip-172-31-83-161.ec2.internal: range [6666668, 10000000], local sum = 27777777222222
+Exit code: 0
+=== Program=sum Processes=3 Run=4 ===
+Rank 1 on ip-172-31-27-178.ec2.internal: range [3333335, 6666667], local sum = 16666668333333
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 3333334], local sum = 5555559444445
+
+Processes = 3
+Rank 2 on ip-172-31-83-161.ec2.internal: range [6666668, 10000000], local sum = 27777777222222
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.001969394 seconds
+Exit code: 0
+=== Program=sum Processes=3 Run=5 ===
+Rank 1 on ip-172-31-27-178.ec2.internal: range [3333335, 6666667], local sum = 16666668333333
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 3333334], local sum = 5555559444445
+
+Processes = 3
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.001738860 seconds
+Rank 2 on ip-172-31-83-161.ec2.internal: range [6666668, 10000000], local sum = 27777777222222
+Exit code: 0
+=== Program=pi Processes=1 Run=1 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 10000000, inside = 7854194
+
+Processes = 1
+Total trials = 10000000
+Inside points = 7854194
+Estimated pi = 3.1416776000
+Reference pi = 3.1415926536
+Absolute error = 0.0000849464
+Trial count validation: CORRECT
+Maximum elapsed time = 0.094854756 seconds
+Exit code: 0
+=== Program=pi Processes=1 Run=2 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 10000000, inside = 7854194
+
+Processes = 1
+Total trials = 10000000
+Inside points = 7854194
+Estimated pi = 3.1416776000
+Reference pi = 3.1415926536
+Absolute error = 0.0000849464
+Trial count validation: CORRECT
+Maximum elapsed time = 0.095651222 seconds
+Exit code: 0
+=== Program=pi Processes=1 Run=3 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 10000000, inside = 7854194
+
+Processes = 1
+Total trials = 10000000
+Inside points = 7854194
+Estimated pi = 3.1416776000
+Reference pi = 3.1415926536
+Absolute error = 0.0000849464
+Trial count validation: CORRECT
+Maximum elapsed time = 0.095066521 seconds
+Exit code: 0
+=== Program=pi Processes=1 Run=4 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 10000000, inside = 7854194
+
+Processes = 1
+Total trials = 10000000
+Inside points = 7854194
+Estimated pi = 3.1416776000
+Reference pi = 3.1415926536
+Absolute error = 0.0000849464
+Trial count validation: CORRECT
+Maximum elapsed time = 0.094008488 seconds
+Exit code: 0
+=== Program=pi Processes=1 Run=5 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 10000000, inside = 7854194
+
+Processes = 1
+Total trials = 10000000
+Inside points = 7854194
+Estimated pi = 3.1416776000
+Reference pi = 3.1415926536
+Absolute error = 0.0000849464
+Trial count validation: CORRECT
+Maximum elapsed time = 0.094697208 seconds
+Exit code: 0
+=== Program=pi Processes=2 Run=1 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 5000000, inside = 3926691
+
+Processes = 2
+Total trials = 10000000
+Inside points = 7853271
+Estimated pi = 3.1413084000
+Reference pi = 3.1415926536
+Absolute error = 0.0002842536
+Trial count validation: CORRECT
+Maximum elapsed time = 0.047368993 seconds
+Rank 1 on ip-172-31-83-161.ec2.internal: trials = 5000000, inside = 3926580
+Exit code: 0
+=== Program=pi Processes=2 Run=2 ===
+Rank 1 on ip-172-31-83-161.ec2.internal: trials = 5000000, inside = 3926580
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 5000000, inside = 3926691
+
+Processes = 2
+Total trials = 10000000
+Inside points = 7853271
+Estimated pi = 3.1413084000
+Reference pi = 3.1415926536
+Absolute error = 0.0002842536
+Trial count validation: CORRECT
+Maximum elapsed time = 0.047453565 seconds
+Exit code: 0
+=== Program=pi Processes=2 Run=3 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 5000000, inside = 3926691
+
+Processes = 2
+Total trials = 10000000
+Inside points = 7853271
+Estimated pi = 3.1413084000
+Reference pi = 3.1415926536
+Absolute error = 0.0002842536
+Trial count validation: CORRECT
+Maximum elapsed time = 0.047523502 seconds
+Rank 1 on ip-172-31-83-161.ec2.internal: trials = 5000000, inside = 3926580
+Exit code: 0
+=== Program=pi Processes=2 Run=4 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 5000000, inside = 3926691
+
+Processes = 2
+Total trials = 10000000
+Inside points = 7853271
+Estimated pi = 3.1413084000
+Reference pi = 3.1415926536
+Absolute error = 0.0002842536
+Trial count validation: CORRECT
+Maximum elapsed time = 0.047807525 seconds
+Rank 1 on ip-172-31-83-161.ec2.internal: trials = 5000000, inside = 3926580
+Exit code: 0
+=== Program=pi Processes=2 Run=5 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 5000000, inside = 3926691
+
+Processes = 2
+Total trials = 10000000
+Inside points = 7853271
+Estimated pi = 3.1413084000
+Reference pi = 3.1415926536
+Absolute error = 0.0002842536
+Trial count validation: CORRECT
+Maximum elapsed time = 0.047132737 seconds
+Rank 1 on ip-172-31-83-161.ec2.internal: trials = 5000000, inside = 3926580
+Exit code: 0
+=== Program=pi Processes=3 Run=1 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 3333334, inside = 2618117
+
+Processes = 3
+Total trials = 10000000
+Inside points = 7854326
+Estimated pi = 3.1417304000
+Reference pi = 3.1415926536
+Absolute error = 0.0001377464
+Trial count validation: CORRECT
+Maximum elapsed time = 0.031731217 seconds
+Rank 1 on ip-172-31-27-178.ec2.internal: trials = 3333333, inside = 2617068
+Rank 2 on ip-172-31-83-161.ec2.internal: trials = 3333333, inside = 2619141
+Exit code: 0
+=== Program=pi Processes=3 Run=2 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 3333334, inside = 2618117
+
+Processes = 3
+Total trials = 10000000
+Inside points = 7854326
+Estimated pi = 3.1417304000
+Reference pi = 3.1415926536
+Absolute error = 0.0001377464
+Trial count validation: CORRECT
+Maximum elapsed time = 0.031627135 seconds
+Rank 1 on ip-172-31-27-178.ec2.internal: trials = 3333333, inside = 2617068
+Rank 2 on ip-172-31-83-161.ec2.internal: trials = 3333333, inside = 2619141
+Exit code: 0
+=== Program=pi Processes=3 Run=3 ===
+Rank 1 on ip-172-31-27-178.ec2.internal: trials = 3333333, inside = 2617068
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 3333334, inside = 2618117
+
+Processes = 3
+Total trials = 10000000
+Inside points = 7854326
+Estimated pi = 3.1417304000
+Reference pi = 3.1415926536
+Absolute error = 0.0001377464
+Trial count validation: CORRECT
+Maximum elapsed time = 0.032140386 seconds
+Rank 2 on ip-172-31-83-161.ec2.internal: trials = 3333333, inside = 2619141
+Exit code: 0
+=== Program=pi Processes=3 Run=4 ===
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 3333334, inside = 2618117
+
+Processes = 3
+Total trials = 10000000
+Inside points = 7854326
+Estimated pi = 3.1417304000
+Reference pi = 3.1415926536
+Absolute error = 0.0001377464
+Trial count validation: CORRECT
+Maximum elapsed time = 0.032098712 seconds
+Rank 1 on ip-172-31-27-178.ec2.internal: trials = 3333333, inside = 2617068
+Rank 2 on ip-172-31-83-161.ec2.internal: trials = 3333333, inside = 2619141
+Exit code: 0
+=== Program=pi Processes=3 Run=5 ===
+Rank 1 on ip-172-31-27-178.ec2.internal: trials = 3333333, inside = 2617068
+Rank 0 on ip-172-31-27-178.ec2.internal: trials = 3333334, inside = 2618117
+
+Processes = 3
+Total trials = 10000000
+Inside points = 7854326
+Estimated pi = 3.1417304000
+Reference pi = 3.1415926536
+Absolute error = 0.0001377464
+Trial count validation: CORRECT
+Maximum elapsed time = 0.032043316 seconds
+Rank 2 on ip-172-31-83-161.ec2.internal: trials = 3333333, inside = 2619141
+Exit code: 0

@@ -1,0 +1,22 @@
+Exercise 01: GitHub Repository
+============================================================
+Student ID: IT24610781
+Files: Repository: https://github.com/IT24610781/SE3082-Lab08-IT24610781.git
+
+1. COMPILE / SETUP
+-----------------------
+git init
+git branch -M main
+git remote add origin https://github.com/IT24610781/SE3082-Lab08-IT24610781.git
+git add .gitignore Exercise00
+git commit -m "Complete Lab08 MPI starter examples"
+git push -u origin main
+
+2. OBSERVED RESULTS
+-----------------------
+Recorded initial commit e6d7686 was pushed successfully to main. The working tree was clean immediately after that initial push; later exercises require a new commit.
+
+3. EXPLANATION
+-----------------------
+The local repository is Lab08-IT24610781. The initial commit contained .gitignore and three Exercise00 sources. Keep AWS private keys outside the repository.
+
