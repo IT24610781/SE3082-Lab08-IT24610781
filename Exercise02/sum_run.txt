@@ -1,0 +1,8 @@
+Rank 0 on ip-172-31-27-178.ec2.internal: range [1, 5000000], local sum = 12500002500000
+
+Processes = 2
+Total sum = 50000005000000
+Expected  = 50000005000000
+Validation: CORRECT
+Maximum elapsed time = 0.002618675 seconds
+Rank 1 on ip-172-31-83-161.ec2.internal: range [5000001, 10000000], local sum = 37500002500000
